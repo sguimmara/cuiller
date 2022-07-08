@@ -25,12 +25,12 @@ fn main() {
     }
 }
 
-fn handle_valid_input(ok: cuiller::InputType) -> () {
+fn handle_valid_input(ok: cuiller::InputType) {
     println!("input type is {:?}", ok);
     todo!()
 }
 
-fn handle_error_and_exit(e: cuiller::InputError) -> () {
+fn handle_error_and_exit(e: cuiller::InputError) {
     eprintln!("error: {}", e);
     std::process::exit(1);
 }
